@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="gamecontainer">
+      <div class="welcome">Welcome to Tic-Tac-Toe!</div>
+      <div class="playbuttons">
+        <div class="play">Player vs Player</div>
+        <div class="play-computer">Player vs Computer</div>
+      </div>
+      <form class="playerform" onsubmit="return game.accessController.getPlayerData()">
+        <label for="p1-name">Player 1 Name:</label><br>
+        <input type="text" id="p1-name" class="playerinput" name="p1-name"><br><br>
+        <label for="p2-name">Player 2 Name:</label><br>
+        <input type="text" id="p2-name" class="playerinput" name="p2-name"><br><br>
+        <input type="submit" id="formsubmit">
+      </form>
+      <form class="player-computerform" onsubmit="return game.accessController.getPlayerData()">
+        <label for="p1-name">Player Name:</label><br>
+        <input type="text" id="p1-computer-name" class="playerinput" name="p1-name"><br><br>
+        <input type="hidden" id="p2-computer-name" name="p2-name" value="Computer"><br><br>
+        <input type="submit" id="formsubmit">
+      </form>
+      <div class="board">
+        <div class="gridsquare" id="0"></div>
+        <div class="gridsquare" id="1"></div>
+        <div class="gridsquare" id="2"></div>
+        <div class="gridsquare" id="3"></div>
+        <div class="gridsquare" id="4"></div>
+        <div class="gridsquare" id="5"></div>
+        <div class="gridsquare" id="6"></div>
+        <div class="gridsquare" id="7"></div>
+        <div class="gridsquare" id="8"></div>
+      </div>
+      <div class="game-message"></div>
+      <div class="end-message"></div>
+      <div class="play-again">Play Again</div>
+      <div class="main-menu">Main Menu</div>
+    </div>
+    <script src="tic-tac-toe.js"></script>
+  </body>
+</html>

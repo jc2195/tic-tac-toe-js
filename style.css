@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.gamecontainer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  height: 700px;
+  width: 600px;
+  background-color: rgb(0, 130, 252);
+  border-radius: 10%;
+  border: solid 4px;
+}
+.welcome {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+.play {
+  width: 400px;
+  height: auto;
+  background-color: rgb(22, 170, 22);
+  color: white;
+  border: solid 4px;
+  border-radius: 10px;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.play:hover {
+  background-color: white;
+  color: rgb(22, 170, 22);
+  cursor: pointer;
+}
+.play-computer {
+  width: 400px;
+  height: auto;
+  background-color: rgb(255, 145, 0);
+  color: white;
+  border: solid 4px;
+  border-radius: 10px;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.play-computer:hover {
+  background-color: white;
+  color: rgb(255, 145, 0);
+  cursor: pointer;
+}
+.playerform {
+  font-size: 40px;
+  color: white;
+  margin-left: 100px;
+  margin-top: 150px;
+  display: none;
+}
+.player-computerform {
+  font-size: 40px;
+  color: white;
+  margin-left: 100px;
+  margin-top: 150px;
+  display: none;
+}
+.playerinput {
+  height: 50px;
+  width: 400px;
+  margin-top: 20px;
+  font-size: 50px;
+  border-radius: 10px;
+}
+#formsubmit {
+  background-color: rgb(101, 68, 247);
+  border: none;
+  color: white;
+  font-size: 50px;
+  border: solid 4px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 100px;
+}
+#formsubmit:hover {
+  background-color: white;
+  color: rgb(101, 68, 247);
+  cursor: pointer;
+}
+.board {
+  height: 500px;
+  width: 500px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  gap: 5px;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.gridsquare {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  color: rgb(163, 0, 0);
+  font-size: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+.gridsquare:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+.end-message {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  min-width: 400px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  display: none;
+}
+.play-again {
+  width: 400px;
+  height: auto;
+  background-color: red;
+  color: white;
+  border: solid 4px;
+  border-radius: 10px;
+  font-size: 50px;
+  margin-top: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  padding: 20px;
+}
+.play-again:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+.main-menu {
+  width: 400px;
+  height: auto;
+  background-color: grey;
+  color: white;
+  border: solid 4px;
+  border-radius: 10px;
+  font-size: 50px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  padding: 20px;
+}
+.main-menu:hover {
+  background-color: white;
+  color: grey;
+  cursor: pointer;
+}
+.game-message {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: none;
+}
